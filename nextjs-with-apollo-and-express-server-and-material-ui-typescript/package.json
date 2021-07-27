@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "yarn workspace @package/client run build",
+    "start": "yarn workspace @package/server run start",
+    "dev": "export $(cat .env | xargs) && yarn workspace @package/server run dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": "^14"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^15.5.1"
+  }
+}

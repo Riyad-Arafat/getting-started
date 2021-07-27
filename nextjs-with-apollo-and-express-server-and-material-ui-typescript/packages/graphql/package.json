@@ -1,0 +1,7 @@
+{
+  "name": "@package/graphql",
+  "version": "0.0.1",
+  "dependencies": {
+    "apollo-server-express": "^2.25.2"
+  }
+}
