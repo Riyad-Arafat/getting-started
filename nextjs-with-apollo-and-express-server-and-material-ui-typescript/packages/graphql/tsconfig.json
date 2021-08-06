@@ -19,42 +19,21 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "paths": {
-      "@pages/*": [
-        "pages/*"
+      "@client": [
+        "./packages/client/*"
       ],
-      "@src/*": [
-        "src/*"
+      "@server": [
+        "./packages/server/*"
       ],
-      "@components/*": [
-        "src/components/*"
+      "@graphql": [
+        "./packages/graphql/*"
       ],
-      "@containers/*": [
-        "src/containers/*"
-      ],
-      "@gurds/*": [
-        "src/gurds/*"
-      ],
-      "@hooks/*": [
-        "src/hooks/*"
-      ],
-      "@store/*": [
-        "src/store/*"
-      ],
-      "@theme/*": [
-        "src/theme/*"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ]
     },
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
-    "**/*.js",
-    "**/*.jsx",
-    "src/theme/override"
+    "**/*.tsx"
   ],
   "exclude": [
     "node_modules"

@@ -2,9 +2,9 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "build": "yarn workspace @package/client run build",
-    "start": "yarn workspace @package/server run start",
-    "dev": "export $(cat .env | xargs) && yarn workspace @package/server run dev"
+    "build": "yarn workspace @monorepo/client run build",
+    "start": "export $(cat .env.production | xargs) && yarn workspace @monorepo/server run start",
+    "dev": "export $(cat .env.development | xargs) && yarn workspace @monorepo/server run dev"
   },
   "workspaces": [
     "packages/*"

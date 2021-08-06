@@ -5,7 +5,7 @@ let apolloClient: ApolloClient<any> | null = null;
 
 function createIsomorphLink() {
   return new HttpLink({
-    uri: "/api/graphql",
+    uri: process.env.GRAPHQL_URL,
     credentials: "same-origin",
     headers: {
       authorization:

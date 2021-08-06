@@ -29,7 +29,7 @@ async function bootstrapClientApp(expressApp: any) {
 }
 
 async function bootstrapApolloServer(expressApp: any) {
-  apolloServer.applyMiddleware({ app: expressApp, path: "/api/graphql" });
+  apolloServer.applyMiddleware({ app: expressApp, path: "/graphql" });
 }
 
 main();

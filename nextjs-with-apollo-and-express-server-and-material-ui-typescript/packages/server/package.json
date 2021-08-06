@@ -1,14 +1,16 @@
 {
-  "name": "@package/server",
+  "name": "@monorepo/server",
   "version": "0.0.1",
+  "main": "index.tx",
   "scripts": {
-    "start": "ts-node --project tsconfig.server.json index.ts",
-    "dev": "nodemon"
+    "start": "ts-node index.ts",
+    "dev": "nodemon index.ts"
   },
   "dependencies": {
-    "express": "4.17.1",
-    "ts-node": "8.8.2",
-    "typescript": "3.8.3"
+    "express": "^4.17.1",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3",
+    "mongoose": "^5.13.3"
   },
   "devDependencies": {
     "nodemon": "2.0.3",
